@@ -30,9 +30,9 @@ def salesman_traveling_with_pruning(cities, matrix_distance):
         return False
 
 
-    # Función recursiva que busca la ruta óptima
     def recursive_search(route, cost_so_far):
-        nonlocal OptC, OptX
+       """Seacrh  the best route of all the possible cases """ 
+       nonlocal OptC, OptX
 
         if len(route) == cities:
             route_with_zero = route + (0,)
@@ -46,7 +46,5 @@ def salesman_traveling_with_pruning(cities, matrix_distance):
             if city not in route and not prune(route + (city,)+(0,), cost_so_far + matrix_distance[route[-1]][city]):
                 recursive_search(route + (city,), cost_so_far + matrix_distance[route[-1]][city])
 
-
-    # Llamada inicial para iniciar la búsqueda
     recursive_search((0,), 0)
     return OptC, OptX
