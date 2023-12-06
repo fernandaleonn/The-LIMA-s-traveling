@@ -21,33 +21,30 @@ The inherent complexity emerges from the exhaustive exploration of all possible 
 
 Throughout this document, we will delve into various techniques and approaches implemented in the Python language, leveraging tools such as Google Colab, to confront this formidable challenge. This endeavor aspires to furnish a robust and optimal solution for this classic optimization problem within the realm of Python programming.
 
+**Traveling salesman problem**
+
+
+
+
+
 **Solution methods**
 
-The traveling salesman problem consists of a salesman and a set of cities. The salesman has to visit each one of the cities starting from a certain one (e.g. the hometown) and returning to the same city. The challenge of the problem is that the traveling salesman wants to minimize the total length of the trip, as previously mentioned.
+The traveling salesman problem entails a salesman and a set of cities. The task at hand is for the salesman to visit each city, commencing from a specific city (perhaps his hometown), and eventually returning to the same starting point. The primary challenge revolves around minimizing the overall duration of the journey.
 
-The complexity of calculating the traveling agent problem has sparked multiple initiatives to improve efficiency in route calculations. The most basic method is known as brute force, which consists of calculating all possible routes, which is extremely inefficient and almost impossible in large networks. There are also heuristics that have been developed due to the complexity in calculating optimal solutions in robust networks, which is why there are methods such as nearest neighbor, cheapest insertion and two-way. 
-Finally, there are algorithms that provide optimal solutions, such as the branch and bound method, which works on the problem as an assignment algorithm.
+Given the inherent complexity associated with solving the traveling salesman problem, various initiatives have been launched to enhance the efficiency of route determination. The most fundamental approach, known as brute force, involves computing all possible routes—an approach that proves exceedingly inefficient and practically unfeasible, particularly in expansive networks. Furthermore, heuristics, including the nearest neighbor, cheapest insertion, and bidirectional methods, have been developed to address the intricacies of computing optimal solutions in robust networks.
 
-A more sophisticated pruning method is to use a bounding function. We require some preliminary definitions, which will apply to any backtracking algorithm for a maximization problem.
+Within this context, algorithms designed to yield optimal solutions have emerged, such as the branch and join method and the pruning method. This work will primarily focus on the latter, a technique aimed at reducing the search space by systematically eliminating branches and nodes. In the realm of the Traveling Salesman Problem (TSP), pruning proves indispensable for enhancing the algorithm's efficiency by discarding solutions known in advance not to lead to the optimal solution.
 
-## Matriz de Ejemplo
-
-```latex
-\[
-\begin{bmatrix}
-    a & b & c \\
-    d & e & f \\
-    g & h & i \\
-\end{bmatrix}
-\]
+**Proposed algorithm**
 
 
 
 
 
+**References**
 
 
-References:
+
 
 Definition:
 A Hamiltonian cycle is a cycle on a graph that goes through all the
