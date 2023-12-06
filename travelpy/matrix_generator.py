@@ -1,3 +1,4 @@
+import numpy as np
 def matrix_generator(n):
     # Generar una matriz aleatoria 20x20 de enteros entre 1 y 50
     random_matrix = np.random.randint(1, 50, size=(n, n))
