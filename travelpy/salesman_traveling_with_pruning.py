@@ -1,13 +1,13 @@
 from itertools import permutations
 
 def city_permutation(cities):
-   """Funtion that generates all the permutations of all the cities that travel """
+   """Function that generates all the permutations of the cities to be traveled"""
     all_permutations = permutations(range(1, cities))
     for permutation in all_permutations:
         yield (0,) + permutation + (0,)
 
 def cost(matrix_distance, route):
-   """Gives you theprice of all the routes tha we have generated in city permutations """
+   """Gives you the prices of all the routes that we have generated in city permutations."""
     total_dist = 0
     for i in range(len(route) - 1):
         total_dist += matrix_distance[route[i]][route[i + 1]]
@@ -15,15 +15,15 @@ def cost(matrix_distance, route):
 
 
 def salesman_traveling_with_pruning(cities, matrix_distance):
-   """ Defines a supreme called and generate an empty vector to compare """
+   """Define a supreme and generates an empty vector for comparison"""
     OptC = float('inf')
     OptX = []
 
 
 
     def prune(route, cost_so_far):
-        """ Auxiliary function of salesman_traveling_with_pruning that returns the optimal      
-        solution implementing the pruning method"""
+        """ Auxiliary function for the traveling salesman problem with pruning, 
+        returning the optimal solution by implementing the pruning method."""
         nonlocal OptC, OptX
         if cost_so_far >= OptC:
             return True
@@ -31,7 +31,7 @@ def salesman_traveling_with_pruning(cities, matrix_distance):
 
 
     def recursive_search(route, cost_so_far):
-       """Seacrh  the best route of all the possible cases """ 
+       """Search for the best route among all possible cases """ 
        nonlocal OptC, OptX
 
         if len(route) == cities:
