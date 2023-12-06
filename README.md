@@ -30,14 +30,16 @@ Finally, there are algorithms that provide optimal solutions, such as the branch
 
 A more sophisticated pruning method is to use a bounding function. We require some preliminary definitions, which will apply to any backtracking algorithm for a maximization problem.
 
+## Matriz de Ejemplo
 
-$
+```latex
+\[
 \begin{bmatrix}
     a & b & c \\
     d & e & f \\
     g & h & i \\
 \end{bmatrix}
-$
+\]
 
 
 
