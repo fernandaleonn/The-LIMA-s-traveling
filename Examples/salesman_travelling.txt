@@ -15,6 +15,6 @@ print(f"The optimal route is {optimal_route}.")
 
 wich print
 
-The minimal cost is 19.
-The optimal route is (0, 1, 2, 3, 0).
+>>>The minimal cost is 19.
+>>>The optimal route is (0, 1, 2, 3, 0).
 
