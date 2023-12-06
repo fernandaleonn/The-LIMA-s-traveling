@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
-def grafo_generator(route):
-
+def graph_generator(route):
+    """Generate a graph representing the solution of the sales man traveling problem """
     color_map = ["red"]
     for i in range(1, len(route) - 1):
         color_map.append("aqua")
