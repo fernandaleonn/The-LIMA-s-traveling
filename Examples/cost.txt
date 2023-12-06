@@ -1,0 +1,10 @@
+this is a funcion wich help us to determinate the cost to travel around all the cities to use this we need a symetrical matrix with distances and a route
+for example the symetrical matrix 
+
+distances =[[0,3,5,8],
+   [3,0,2,7],
+   [5,2,0,6],
+   [8,7,6,0]]
+  
+and the rout
+
