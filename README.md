@@ -2,23 +2,23 @@
 
 **Abstract** 
 
-The traveling agent problem (TSP) stands out as a crucial challenge in the field of combinatorial optimization and persists as an open question in mathematical programming. This problem, with practical applications in areas such as logistics, route planning and resource distribution, has aroused deep interest in the scientific community since the 1950s. The inherent complexity of TSP manifests itself in the vast and exponential number of possible paths, making exhaustive exploration impractical. This project aims to address this complexity and explore a way of resolution, using the pruning method, which will be explained during the course of the project.
+The Traveling Salesman Problem (TSP) emerges as a pivotal challenge within the realm of combinatorial optimization, persisting as an open question in mathematical programming. This quandary, with practical implications spanning logistics, route planning, and resource distribution, has captivated the scientific community's attention since the 1950s. The inherent complexity of TSP becomes apparent in the vast and exponentially growing number of potential paths, rendering exhaustive exploration impractical. This project seeks to grapple with this complexity and propose a resolution method utilizing the pruning technique, elucidated in subsequent sections.
 
-A brief historical introduction is presented, the aforementioned concepts and also a brief explanation of the Hamiltonian circuit, among other concepts that will be addressed in detail.
+The narrative unfolds with a concise historical introduction, expounding upon the fundamental concepts associated with TSP and providing a brief overview of the Hamiltonian circuit, among other relevant topics slated for detailed exploration.
 
-Furthermore, we will see why this method is very useful for solving this problem and finally, a section is presented where recommendations and conclusions are presented, which guide possible future developments of this theory.
+Moreover, we will delve into the reasons behind the efficacy of the pruning method in tackling this problem. The final section offers recommendations and conclusions, guiding potential future developments in this theoretical framework.
 
-**Keywords:** Traveling Agent Problem, bounding functions
+**Keywords:** Traveling Agent Problem, pruning method
 
 **Introduction**
 
-What is the optimal route to choose to visit all the cities and return to the city of departure? We know that there may be multiple ways to get to the same place, but choosing the most efficient one is directly related to reducing travel costs, so it should also be the shortest. The Traveling Salesman Problem refers to the problem of finding the shortest and, at the same time, the most efficient route to reach a destination.
+What constitutes the optimal route for visiting all cities and returning to the city of departure? We acknowledge the existence of multiple ways to reach the same destination, but selecting the most efficient one is crucial for directly minimizing travel costs; hence, it must also be the shortest. The Traveling Salesman's Problem (TSP) embodies the challenge of determining the shortest and, simultaneously, the most efficient route to reach a destination.
 
-The first reported solution to solve the Traveling Agent problem was in 1954, when George Dantzig, Ray Fulkerson, and Selmer Johnson published a description of a PAV solution method titled "Solutions of a large scale traveling salesman problem", to solve a instance of 49 cities where a travel agent wants to visit a set of cities, assigning them a cost for visiting adjacent cities (travel distance between two cities).
+The inaugural solution to the Traveling Salesman Problem was reported in 1954 by George Dantzig, Ray Fulkerson, and Selmer Johnson. Their publication, titled 'Solutions to the Large-Scale Traveling Salesman Problem,' detailed a PAV solution method. This method was applied to address an instance involving 49 cities, where a travel agent aimed to visit a set of cities while assigning costs for visiting adjacent cities (representing the travel distance between two cities).
 
-The inherent complexity of exploring all possible path combinations makes finding the optimal solution a fascinating computational challenge.
+The inherent complexity emerges from the exhaustive exploration of all possible path combinations, rendering the quest for the optimal solution a captivating computational challenge.
 
-Over the course of this document, we will explore various techniques and approaches implemented in the Python language, also using Google Colab, to address the traveling agent challenge. This work aims to provide solutions and best practices to face this classic optimization problem in the context of Python programming.
+Throughout this document, we will delve into various techniques and approaches implemented in the Python language, leveraging tools such as Google Colab, to confront this formidable challenge. This endeavor aspires to furnish a robust and optimal solution for this classic optimization problem within the realm of Python programming.
 
 **Solution methods**
 
