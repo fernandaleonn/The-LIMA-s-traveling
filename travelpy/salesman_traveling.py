@@ -5,7 +5,7 @@ def city_permutation(cities):
     for permutation in all_permutations:
         yield (0,) + permutation + (0,)  # Agrega 0 al inicio y al final de la permutación
 
-def cost(cities, matrix_distance, route):
+def cost(matrix_distance, route):
     total_dist = 0
     for i in range(len(route) - 1):
         total_dist += matrix_distance[route[i]][route[i + 1]]
@@ -16,7 +16,7 @@ def salesman_traveling(cities, matrix_distance):
     OptX = []
 
     for route in city_permutation(cities):
-        C = cost(cities, matrix_distance, route)
+        C = cost(matrix_distance, route)
         if C < OptC:
             OptC = C
             OptX = route
