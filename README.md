@@ -31,7 +31,12 @@ A more sophisticated pruning method is to use a bounding function. We require so
 
 
 
-Referencias:
 
-Definición:
-Un ciclo hamiltoniano es un ciclo en una gráfica que pasa por todos los
+
+
+
+
+References:
+
+Definition:
+A Hamiltonian cycle is a cycle on a graph that goes through all the
