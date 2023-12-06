@@ -13,4 +13,5 @@ The first reported solution to solve the Traveling Agent problem was in 1954, wh
 
 Over the course of this document, we will explore various techniques and approaches implemented in the Python language, also using Google Colab, to address the traveling agent challenge. This work aims to provide solutions and best practices to face this classic optimization problem in the context of Python programming.
 
-**Solution methods**
+**Solution methods**\\
+The traveling salesman problem consists of a salesman and a set of cities. The salesman has to visit each one of the cities starting from a certain one (e.g. the hometown) and returning to the same city. The challenge of the problem is that the traveling salesman wants to minimize the total length of the trip, as previously mentioned.
