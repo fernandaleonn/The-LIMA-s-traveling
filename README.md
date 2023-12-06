@@ -12,3 +12,5 @@ The first reported solution to solve the Traveling Agent problem was in 1954, wh
   The inherent complexity of exploring all possible path combinations makes finding the optimal solution a fascinating computational challenge.
 
 Over the course of this document, we will explore various techniques and approaches implemented in the Python language, also using Google Colab, to address the traveling agent challenge. This work aims to provide solutions and best practices to face this classic optimization problem in the context of Python programming.
+
+**Solution methods**
