@@ -25,3 +25,13 @@ The complexity of calculating the traveling agent problem has sparked multiple i
 Finally, there are algorithms that provide optimal solutions, such as the branch and bound method, which works on the problem as an assignment algorithm.
 
 A more sophisticated pruning method is to use a bounding function. We require some preliminary definitions, which will apply to any backtracking algorithm for a maximization problem.
+
+
+
+
+
+
+Referencias:
+
+Definición:
+Un ciclo hamiltoniano es un ciclo en una gráfica que pasa por todos los
