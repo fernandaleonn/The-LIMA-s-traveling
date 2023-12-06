@@ -11,4 +11,3 @@ def matrix_generator(n):
     symmetric_matrix = (random_matrix + random_matrix.T) // 2
     return symmetric_matrix.tolist()
 
-matrix_generator(5)
