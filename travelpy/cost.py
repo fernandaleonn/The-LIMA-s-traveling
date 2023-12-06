@@ -1,3 +1,4 @@
+
 def cost(matrix_distance, route):
     total_dist = 0
     for i in range(len(route) - 1):
