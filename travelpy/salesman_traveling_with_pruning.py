@@ -7,7 +7,7 @@ def city_permutation(cities):
         yield (0,) + permutation + (0,)
 
 def cost(matrix_distance, route):
-   """Gives you the prices of all the routes that we have generated in city permutations."""
+   """Gives you the prices of all the routes that we have generated in city permutations"""
     total_dist = 0
     for i in range(len(route) - 1):
         total_dist += matrix_distance[route[i]][route[i + 1]]
@@ -23,7 +23,7 @@ def salesman_traveling_with_pruning(cities, matrix_distance):
 
     def prune(route, cost_so_far):
         """ Auxiliary function for the traveling salesman problem with pruning, 
-        returning the optimal solution by implementing the pruning method."""
+        returning the optimal solution by implementing the pruning method"""
         nonlocal OptC, OptX
         if cost_so_far >= OptC:
             return True
