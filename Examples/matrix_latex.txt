@@ -1,0 +1,1 @@
+The usage of this function is pretty simple just type a list of lists 
