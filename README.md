@@ -28,6 +28,7 @@ Throughout this document, we will delve into various techniques and approaches i
 __Matrix of cost__
 
 To solve this problem independently of the method we had to considerate an object called matrix of cost, the objective is reduce that matrix, employing any method, for expample let's be 
+
 M =
 | $\infty$ | 3 | 5 | 8 |
 |----------|----------|---|---|
