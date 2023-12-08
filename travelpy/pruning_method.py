@@ -40,8 +40,8 @@ def pruning_method(cities, matrix_distance):
             return
 
         for city in range(1, cities):
-            if city not in route and not prune(route + (city,)+(0,), cost_so_far + matrix_distance[route[-1]][city]):
-             recursive_search(route + (city,), cost_so_far + matrix_distance[route[-1]][city])
+            if city not in route and not prune(route + (city,)+(0,), current_cost + matrix_distance[route[-1]][city]):
+             recursive_search(route + (city,), current_cost + matrix_distance[route[-1]][city])
 
     recursive_search((0,), 0)
     return OptC, OptX
