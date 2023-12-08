@@ -14,7 +14,7 @@ def cost(matrix_distance, route):
     return total_dist
 
 
-def salesman_traveling_with_pruning(cities, matrix_distance):
+def pruning_method(cities, matrix_distance):
     """Define a supreme and generates an empty vector for comparison"""
     OptC = float('inf')
     OptX = []
