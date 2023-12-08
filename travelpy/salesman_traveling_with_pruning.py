@@ -2,9 +2,9 @@ from itertools import permutations
 
 def city_permutation(cities):
    """Generator that generates all the permutations of the cities to be traveled"""
-    all_permutations = permutations(range(1, cities))
-    for permutation in all_permutations:
-        yield (0,) + permutation + (0,)
+   all_permutations = permutations(range(1, cities))
+   for permutation in all_permutations:
+      yield (0,) + permutation + (0,)
 
 def cost(matrix_distance, route):
    """Gives you the prices of all the routes that we have generated in city permutations"""
