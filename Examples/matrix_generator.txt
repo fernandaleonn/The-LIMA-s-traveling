@@ -1,0 +1,13 @@
+this function is a generator which helps us to create a matrix representing the distance between cities
+
+example:
+
+matrix_generator(6)
+
+this print:
+>>>[[0, 25, 29, 30, 30, 16],
+   [25, 0, 5, 24, 34, 30],
+   [29, 5, 0, 22, 18, 24],
+   [30, 24, 22, 0, 9, 11],
+   [30, 34, 18, 9, 0, 36],
+   [16, 30, 24, 11, 36, 0]]
