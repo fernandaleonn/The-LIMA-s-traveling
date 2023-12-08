@@ -25,7 +25,7 @@ Throughout this document, we will delve into various techniques and approaches i
 
 
 
-
+*Matrix of distances*
 
 **Solution methods**
 
@@ -37,10 +37,7 @@ Within this context, algorithms designed to yield optimal solutions have emerged
 
 **Proposed algorithm**
 
-| Elemento 1 | Elemento 2 | Elemento 3 |
-|------------|------------|------------|
-| Elemento 4 | Elemento 5 | Elemento 6 |
-| Elemento 7 | Elemento 8 | Elemento 9 |
+
 
 
 
