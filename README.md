@@ -25,7 +25,7 @@ Throughout this document, we will delve into various techniques and approaches i
 
 
 
-*Matrix of distances*
+__Este texto también está en negrita__
 
 **Solution methods**
 
