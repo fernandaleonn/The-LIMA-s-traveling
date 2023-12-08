@@ -35,7 +35,7 @@ M =
 | 5 | 2 | $\infty$ | 6 |
 | 8 | 7 | 6 | $\infty$ |
 
-In this scenario, our objective is to minimize the matrix M. It is straightforward to understand how distances are defined in this context. We can approach it row by row, considering the permutation \(C = (0 \, 1 \, 2 \, 3)\), where each number corresponds to a city, with 0 representing the origin city. For the given matrix, the cost of the route \(C\) is 19. This calculation is derived from the fact that the journey from city 0 to city 1 incurs a cost of 3, and the journey from city 2 to city 3 incurs a cost of 6. Essentially, the row number represents the current city, and the column number represents the destination city.
+In this scenario, our objective is to minimize the matrix M. It is straightforward to understand how distances are defined in this context. We can approach it row by row, considering the permutation $C = (0 \, 1 \, 2 \, 3)$, where each number corresponds to a city, with 0 representing the origin city. For the given matrix, the cost of the route $C$ is 19. This calculation is derived from the fact that the journey from city 0 to city 1 incurs a cost of 3, and the journey from city 2 to city 3 incurs a cost of 6. Essentially, the row number represents the current city, and the column number represents the destination city.
 
 **Solution methods**
 
