@@ -28,10 +28,11 @@ Throughout this document, we will delve into various techniques and approaches i
 __Matrix of cost__
 
 To solve this problem independently of the method we had to considerate an object called matrix of cost, the objective is reduce that matrix, employing any method, for expample let's be 
-| $\infty$ |     3    | 5 | 8 |
+| $\infty$ | 3 | 5 | 8 |
 |----------|----------|---|---|
-| 3        | $\infty$ | 2 | 7 |
-| 8      | 7 | 6 | $\infty$ |
+| 3 | $\infty$ | 2 | 7 |
+| 5 | 2 | $\infty$ | 6 |
+| 8 | 7 | 6 | $\infty$ |
 
 
 
