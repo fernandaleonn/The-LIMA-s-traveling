@@ -19,15 +19,15 @@ def salesman_traveling_with_pruning(cities, matrix_distance):
     OptC = float('inf')
     OptX = []
 
-    def prune(route, cost_so_far):
+    def prune(route, current_cost):
        """ Auxiliary function for the traveling salesman problem with pruning, 
       returning the optimal solution by implementing the pruning method"""
        nonlocal OptC, OptX
-       if cost_so_far >= OptC:
+       if current_cost >= OptC:
           return True
        return False
     
-    def recursive_search(route, cost_so_far):
+    def recursive_search(route, current_cost):
         """Search for the best route among all possible cases """ 
         nonlocal OptC, OptX
 
