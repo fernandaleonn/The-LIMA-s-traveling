@@ -7,4 +7,4 @@ matrix_example = [
 ]
 print_latex_matrix(matriz_example)
 
-It will print the list "matrix_expample" in latex format
+It will print the list "matrix_example" in latex format
