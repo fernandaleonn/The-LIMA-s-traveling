@@ -1,34 +1,7 @@
-def print_matrix_in_latex(matrix):
-    """
-    Print a matrix in LaTeX format.
+from sympy import Matrix, init_printing
 
-    Parameters:
-    matrix (list of lists): The 2D matrix to be printed.
-
-    Example:
-    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print_matrix_in_latex(matrix)
-    """
-    rows = len(matrix)
-    cols = len(matrix[0])
-
-    # Begin LaTeX matrix
-    latex_code = "\\begin{bmatrix}\n"
-
-    for i in range(rows):
-        # Add each row to LaTeX code
-        latex_code += "  " + " & ".join(map(str, matrix[i]))
-        # Add newline after each row (except the last one)
-        if i < rows - 1:
-            latex_code += " \\\\\n"
-
-    # End LaTeX matrix
-    latex_code += "\n\\end{bmatrix}"
-
-    # Print the LaTeX code
-    print(latex_code)
-
-# Example usage:
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print_matrix_in_latex(matrix)
+def print_latex_matrix(matriz):
+    init_printing(use_latex=True)
+    matriz_sympy = Matrix(matriz)
+    display(matriz_sympy)
 
