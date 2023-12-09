@@ -42,8 +42,21 @@ Within this context, algorithms designed to yield optimal solutions have emerged
 
 **Proposed algorithm**
 
+To address this problem with the pruning method, we employ strategies aimed at narrowing down the search space and enhancing the algorithm's efficiency. Pruning is a widely-used technique in branching algorithms, where partial solutions that do not contribute to the optimal solution are discarded. Here, we present an overview of how this method can be effectively applied to the problem:
 
+The TSP can be conceptualized as a search tree, wherein each node represents a city, and edges signify connections between cities. The primary objective is to discover a tour that visits each city exactly once, returning to the starting point, while minimizing the total distance covered.
 
+In the course of the search, various branches of the tree are traversed to assess potential solutions. Pruning plays a crucial role by eliminating branches incapable of leading to an optimal solution or those previously explored and deemed suboptimal.
+
+To facilitate this process, a bounding function is employed to estimate the minimum distance achievable from a given node. This function guides decisions on whether to delve deeper into a branch or prune the current one, redirecting the search elsewhere in the tree.
+
+Key pruning strategies include:
+
+*Pruning by Feasibility:* Discarding branches failing to meet specific feasibility criteria. For instance, a branch is pruned if a city is visited twice in a tour, rendering it invalid.
+
+*Pruning for Optimality:* Eliminating branches incapable of yielding a superior solution to the best-known solution encountered thus far. If the bounding function indicates that the minimum achievable distance on a branch exceeds the current best solution, pruning is warranted.
+
+Continuous updates to the best-known solution occur as the tree is explored. Employing pruning techniques in the TSP can significantly enhance the algorithm's efficiency, particularly in minimizing execution time.
 
 __Matrix of cost__
 
