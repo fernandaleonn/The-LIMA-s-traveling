@@ -63,4 +63,6 @@ Within this context, algorithms designed to yield optimal solutions have emerged
 
 **References**
 
+Rosen, K. H. (1999). Discrete Mathematics Its Applications. Editorial.
+
 
