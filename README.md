@@ -68,6 +68,8 @@ $\infty$. This is due to the fact that in Hamiltonian diagrams, the distance fro
 
 **References**
 
-Rosen, K. H. (1999). Discrete Mathematics Its Applications. Editorial.
+1. Rosen, K. H. (1999). Discrete Mathematics Its Applications. Editorial.
+2. Dantzig, G. B., Fulkerson, D. R., & Johnson, S. M. (1954). Solution of a large-scale traveling-salesman problem. Operations Research, 2(4), 393-410.
+3. 
 
 
