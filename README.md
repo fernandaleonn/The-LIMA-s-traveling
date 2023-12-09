@@ -32,6 +32,19 @@ In the context of the TSP, a cyclic permutation $\pi$ serves as a representation
 
 If $\pi(j)$ is interpreted as the city following city j for j = 1, 2, ··· , n, the cost of the tour can be defined as follows: $\sum_{j=1}^{n}d_{j\pi (j)}$.
 
+**Solution methods**
+
+The traveling salesman problem entails a salesman and a set of cities. The task at hand is for the salesman to visit each city, commencing from a specific city (perhaps his hometown), and eventually returning to the same starting point. The primary challenge revolves around minimizing the overall duration of the journey.
+
+Given the inherent complexity associated with solving the traveling salesman problem, various initiatives have been launched to enhance the efficiency of route determination. The most fundamental approach, known as brute force, involves computing all possible routes—an approach that proves exceedingly inefficient and practically unfeasible, particularly in expansive networks. Furthermore, heuristics, including the nearest neighbor, cheapest insertion, and bidirectional methods, have been developed to address the intricacies of computing optimal solutions in robust networks.
+
+Within this context, algorithms designed to yield optimal solutions have emerged, such as the branch and join method and the pruning method. This work will primarily focus on the latter, a technique aimed at reducing the search space by systematically eliminating branches and nodes. In the realm of the Traveling Salesman Problem (TSP), pruning proves indispensable for enhancing the algorithm's efficiency by discarding solutions known in advance not to lead to the optimal solution.
+
+**Proposed algorithm**
+
+
+
+
 __Matrix of cost__
 
 To address this issue irrespective of the method employed, we needed to take into account an entity known as the "matrix of cost." The primary goal is to minimize this matrix, utilizing various methods. For instance, let's consider the following approach:
@@ -45,15 +58,7 @@ M =
 In this scenario, our objective is to minimize the matrix M. It is straightforward to understand how distances are defined in this context. We can approach it row by row, considering the permutation $C = (0 \quad 1 \quad 2 \quad 3)$, where each number corresponds to a city, with 0 representing the origin city. For the given matrix, the cost of the route $C$ is 19. This calculation is derived from the fact that the journey from city 0 to city 1 incurs a cost of 3, and the journey from city 2 to city 3 incurs a cost of 6. Essentially, the row number represents the current city, and the column number represents the destination city. On the other hand, it is worth noting that in the trace of the matrix, we encounter 
 $\infty$. This is due to the fact that in Hamiltonian diagrams, the distance from a point to itself is defined as $\infty$.
 
-**Solution methods**
 
-The traveling salesman problem entails a salesman and a set of cities. The task at hand is for the salesman to visit each city, commencing from a specific city (perhaps his hometown), and eventually returning to the same starting point. The primary challenge revolves around minimizing the overall duration of the journey.
-
-Given the inherent complexity associated with solving the traveling salesman problem, various initiatives have been launched to enhance the efficiency of route determination. The most fundamental approach, known as brute force, involves computing all possible routes—an approach that proves exceedingly inefficient and practically unfeasible, particularly in expansive networks. Furthermore, heuristics, including the nearest neighbor, cheapest insertion, and bidirectional methods, have been developed to address the intricacies of computing optimal solutions in robust networks.
-
-Within this context, algorithms designed to yield optimal solutions have emerged, such as the branch and join method and the pruning method. This work will primarily focus on the latter, a technique aimed at reducing the search space by systematically eliminating branches and nodes. In the realm of the Traveling Salesman Problem (TSP), pruning proves indispensable for enhancing the algorithm's efficiency by discarding solutions known in advance not to lead to the optimal solution.
-
-**Proposed algorithm**
 
 
 
