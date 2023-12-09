@@ -29,9 +29,7 @@ cities, expressed through the $n x n$ matrix $(d_{ij})$, where $d_{ij}$ is a non
 
 A tour in this context refers to a trajectory that visits all cities exactly once. The primary objective is to identify a path that minimizes the total length of the tour.
 
-In the context of the TSP, a cyclic permutation $\pi$ serves as a representation of a tour. If $\pi(j)$ is interpreted as the city following city j for j = 1, 2, ··· , n, the cost of the tour can be defined as follows:
-
-$\sum_{j=1}^{n}d_{j\pi (j)}$.
+In the context of the TSP, a cyclic permutation $\pi$ serves as a representation of a tour. If $\pi(j)$ is interpreted as the city following city j for j = 1, 2, ··· , n, the cost of the tour can be defined as follows: $\sum_{j=1}^{n}d_{j\pi (j)}$.
 
 __Matrix of cost__
 
