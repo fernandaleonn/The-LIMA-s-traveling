@@ -1,3 +1,7 @@
+"""
+Module to generate a graph representing the solution of the traveling salesman problem.
+"""
+
 import matplotlib.pyplot as plt
 import networkx as nx
 
@@ -10,4 +14,3 @@ def graph_generator(route):
     g = nx.Graph()
     g.add_edges_from(rg)
     return nx.draw(g, with_labels=True, node_color=color_map )
-
