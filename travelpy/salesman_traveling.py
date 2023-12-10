@@ -14,6 +14,7 @@ def cost(matrix_distance, route):
     return total_dist
 
 def salesman_traveling(cities, matrix_distance):
+    """Solves the Traveling Salesman Problem (TSP) using brute force"""
     opt_c = float('inf')  # Inicializar con un valor alto para comparación
     opt_x = []
 
