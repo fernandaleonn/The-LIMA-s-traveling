@@ -1,3 +1,7 @@
+"""
+Module to generate a matrix representing the distance between cities.
+"""
+
 import numpy as np
 
 def matrix_generator(n):
