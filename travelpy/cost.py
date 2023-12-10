@@ -1,3 +1,6 @@
+"""
+Module to calculate the cost of a given route based on a distance matrix.
+"""
 
 def cost(matrix_distance, route):
     """Gives you the prices of all the routes that we have generated in city permutations"""
