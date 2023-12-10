@@ -2,9 +2,9 @@ from itertools import permutations
 
 def city_permutation(cities):
     """Function that generates all the permutations of the cities to be traveled"""
-    all_permutations = permutations(range(1, cities))  # Genera todas las permutaciones posibles excepto (0, ...)
+    all_permutations = permutations(range(1, cities)) 
     for permutation in all_permutations:
-        yield (0,) + permutation + (0,)  # Agrega 0 al inicio y al final de la permutación
+        yield (0,) + permutation + (0,) 
 
 def cost(matrix_distance, route):
     """Gives you the prices of all the routes that we have generated in city permutations."""
@@ -14,13 +14,13 @@ def cost(matrix_distance, route):
     return total_dist
 
 def salesman_traveling(cities, matrix_distance):
-    OptC = float('inf')  # Inicializar con un valor alto para comparación
-    OptX = []
+    opt_c = float('inf')  # Inicializar con un valor alto para comparación
+    opt_x = []
 
     for route in city_permutation(cities):
-        C = cost(matrix_distance, route)
-        if C < OptC:
-            OptC = C
-            OptX = route
+        c = cost(matrix_distance, route)
+        if c < opt_c:
+            opt_c = c
+            opt_x = route
 
-    return OptC, OptX
+    return opt_c, opt_x
