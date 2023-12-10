@@ -10,4 +10,3 @@ def matrix_generator(n):
     np.fill_diagonal(random_matrix, 0)
     symmetric_matrix = (random_matrix + random_matrix.T) // 2
     return symmetric_matrix.tolist()
-
