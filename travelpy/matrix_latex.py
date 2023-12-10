@@ -1,3 +1,7 @@
+"""
+Module for printing a matrix in LaTeX format using SymPy.
+"""
+
 from sympy import Matrix, init_printing
 
 def print_latex_matrix(matriz):
