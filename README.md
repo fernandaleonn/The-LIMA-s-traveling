@@ -31,7 +31,7 @@ A tour in this context refers to a trajectory that visits all cities exactly onc
 In the context of the TSP, a cyclic permutation $\pi$ serves as a representation of a tour. 
 
 If $\pi(j)$ is interpreted as the city following city j for j = 1, 2, ··· , n, the cost of the tour can be defined as follows:
-$\sum_{j=1}^{n}d_{j\pi (j)}$.
+$\sum_{j=1}d_{j\pi (j)}$, for $j \leq n$ .
 
 **Solution methods**
 
