@@ -2,8 +2,9 @@
 **A CLASSIC CHALLENGE USING THE PRUNING METHOD**
 
 **Abstract** 
-
+<div class=text-justify>
 The Traveling Salesman Problem (TSP) emerges as a pivotal challenge within the realm of combinatorial optimization, persisting as an open question in mathematical programming. This quandary, with practical implications spanning logistics, route planning, and resource distribution, has captivated the scientific community's attention since the 1950s. The inherent complexity of TSP becomes apparent in the vast and exponentially growing number of potential paths, rendering exhaustive exploration impractical. This project seeks to grapple with this complexity and propose a resolution method utilizing the pruning technique, elucidated in subsequent sections.
+</div>
 
 The narrative unfolds with a concise historical introduction, expounding upon the fundamental concepts associated with TSP and providing a brief overview of the Hamiltonian circuit, among other relevant topics slated for detailed exploration.
 
