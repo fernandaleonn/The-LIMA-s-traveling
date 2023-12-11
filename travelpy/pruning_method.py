@@ -17,7 +17,7 @@ def cost(matrix_distance, route):
     return total_dist
 
 def pruning_method(num_cities, matrix_distance):
-    """Defines a supreme and generates an empty vector for comparison"""
+    """Solves the problem with the pruning method"""
     opt_c = float('inf')
     opt_x = []
 
