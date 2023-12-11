@@ -8,7 +8,11 @@ The Traveling Salesman Problem (TSP) emerges as a pivotal challenge within the r
   
 </div>
 
+<div class=text-justify>
+  
 The narrative unfolds with a concise historical introduction, expounding upon the fundamental concepts associated with TSP and providing a brief overview of the Hamiltonian circuit, among other relevant topics slated for detailed exploration.
+
+</div>
 
 Moreover, we will delve into the reasons behind the efficacy of the pruning method in tackling this problem. The final section offers recommendations and conclusions, guiding potential future developments in this theoretical framework.
 
@@ -79,8 +83,6 @@ $\infty$. This is due to the fact that in Hamiltonian diagrams, the distance fro
 
 
 
-
-</div>
 
 **References**
 
