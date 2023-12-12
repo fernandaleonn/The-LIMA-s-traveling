@@ -4,27 +4,27 @@
 **Abstract** 
 
   
-The Traveling Salesman Problem (TSP) emerges as a pivotal challenge within the realm of combinatorial optimization, persisting as an open question in mathematical programming. This quandary, with practical implications spanning logistics, route planning, and resource distribution, has captivated the scientific community's attention since the 1950s. The inherent complexity of TSP becomes apparent in the vast and exponentially growing number of potential paths, rendering exhaustive exploration impractical. This project seeks to grapple with this complexity and propose a resolution method utilizing the pruning technique, elucidated in subsequent sections.
+The Traveling Salesman Problem (TSP) stands as a significant challenge in the domain of combinatorial optimization, remaining an unsolved question in mathematical programming. This intricate problem, with real-world applications ranging from logistics to route planning and resource distribution, has intrigued the scientific community since the 1950s. The inherent complexity of TSP becomes evident in the extensive and exponentially increasing number of possible paths, making exhaustive exploration unfeasible. This project aims to address this complexity and present a resolution method leveraging the pruning technique, as detailed in the subsequent sections.
   
 
   
-The narrative unfolds with a concise historical introduction, expounding upon the fundamental concepts associated with TSP and providing a brief overview of the Hamiltonian circuit, among other relevant topics slated for detailed exploration.
+The narrative commences with a succinct historical introduction, elaborating on the foundational concepts related to TSP and offering a brief overview of the Hamiltonian circuit, among other pertinent topics slated for in-depth exploration.
 
 
 
-Moreover, we will delve into the reasons behind the efficacy of the pruning method in tackling this problem. The final section offers recommendations and conclusions, guiding potential future developments in this theoretical framework.
+Furthermore, we will delve into the rationales underpinning the effectiveness of the pruning method in addressing this problem. The concluding section provides recommendations and conclusions, offering guidance for potential future developments within this theoretical framework.
 
 **Keywords:** Traveling Agent Problem, pruning method
 
 **Introduction**
 
-What constitutes the optimal route for visiting all cities and returning to the city of departure? We acknowledge the existence of multiple ways to reach the same destination, but selecting the most efficient one is crucial for directly minimizing travel costs; hence, it must also be the shortest. The Traveling Salesman's Problem (TSP) embodies the challenge of determining the shortest and, simultaneously, the most efficient route to reach a destination.
+What constitutes the optimal route for visiting all cities and returning to the city of departure? While acknowledging the existence of multiple routes to reach the same destination, selecting the most efficient one is crucial for directly minimizing travel costs, and consequently, it must also be the shortest. The Traveling Salesman's Problem (TSP) encapsulates the challenge of determining the shortest and most efficient route to reach a destination.
 
-The inaugural solution to the Traveling Salesman Problem was reported in 1954 by George Dantzig, Ray Fulkerson, and Selmer Johnson. Their publication, titled 'Solutions to the Large-Scale Traveling Salesman Problem,' detailed a PAV solution method. This method was applied to address an instance involving 49 cities, where a travel agent aimed to visit a set of cities while assigning costs for visiting adjacent cities (representing the travel distance between two cities).
+The inaugural solution to the Traveling Salesman Problem was presented in 1954 by George Dantzig, Ray Fulkerson, and Selmer Johnson. Their publication, titled 'Solutions to the Large-Scale Traveling Salesman Problem,' outlined a PAV solution method. This method was employed to address an instance involving 49 cities, where a travel agent aimed to visit a set of cities while assigning costs for visiting adjacent cities, representing the travel distance between two cities.
 
-The inherent complexity emerges from the exhaustive exploration of all possible path combinations, rendering the quest for the optimal solution a captivating computational challenge.
+The inherent complexity arises from the exhaustive exploration of all possible path combinations, turning the quest for the optimal solution into a captivating computational challenge.
 
-Throughout this document, we will delve into various techniques and approaches implemented in the Python language, leveraging tools such as Google Colab, to confront this formidable challenge. This endeavor aspires to furnish a robust and optimal solution for this classic optimization problem within the realm of Python programming.
+Throughout this document, we will delve into various techniques and approaches implemented in the Python language, utilizing tools such as Google Colab, to tackle this formidable challenge. This endeavor aspires to provide a robust and optimal solution for this classic optimization problem within the realm of Python programming.
 
 **Traveling salesman problem**
 
@@ -76,7 +76,7 @@ M =
 In this scenario, our objective is to minimize the matrix M. It is straightforward to understand how distances are defined in this context. We can approach it row by row, considering the permutation $C = (0 \quad 1 \quad 2 \quad 3)$, where each number corresponds to a city, with 0 representing the origin city. For the given matrix, the cost of the route $C$ is 19. This calculation is derived from the fact that the journey from city 0 to city 1 incurs a cost of 3, and the journey from city 2 to city 3 incurs a cost of 6. Essentially, the row number represents the current city, and the column number represents the destination city. On the other hand, it is worth noting that in the trace of the matrix, we encounter 
 $\infty$. This is due to the fact that in Hamiltonian diagrams, the distance from a point to itself is defined as $\infty$.
 
-
+** Algotithm **
 
 
 
