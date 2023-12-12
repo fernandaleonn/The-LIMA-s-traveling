@@ -3,7 +3,13 @@
 
 **Contents**
 
-1. [Abstract](#Abstract)
+1. [Abstract](**Abstract**)
+2. [Introduction](**Introduction**)
+3. [Solution methods](**Solution methods**)
+4. [Proposed algorithm](**Proposed algorithm**)
+5. [Code Compilation Section](**Code Compilation Section**)
+6. [References](**References**)
+7. [Authors](**Authors**)
 
 
 **Abstract** 
