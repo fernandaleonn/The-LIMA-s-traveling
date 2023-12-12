@@ -1,0 +1,19 @@
+this function solve the salesman travelling problem employing the functions cost, city_permutation, pruning_method including both the prune and recursive search functions.
+using a symmetric matrix of distance and the total of cities.
+
+for example:
+
+distances = [
+    [0,3,5,8],
+    [3,0,2,7],
+    [5,2,0,6],
+    [8,7,6,0]]
+
+minimal_cost, optimal_route = pruning_method(4,distances)
+print(f"The minimal cost is {minimal_cost}.")
+print(f"The optimal route is {optimal_route}.")
+
+wich print 
+
+>>>The minimal cost is 19.
+>>>The optimal route is (0, 1, 2, 3, 0).
