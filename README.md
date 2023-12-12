@@ -12,7 +12,7 @@
 7. [Authors](#Authors)
 
 
-**Abstract** 
+##Abstract 
 
   
 The Traveling Salesman Problem (TSP) stands as a significant challenge in the domain of combinatorial optimization, remaining an unsolved question in mathematical programming. This intricate problem, with real-world applications ranging from logistics to route planning and resource distribution, has intrigued the scientific community since the 1950s. The inherent complexity of TSP becomes evident in the extensive and exponentially increasing number of possible paths, making exhaustive exploration unfeasible. This project aims to address this complexity and present a resolution method leveraging the pruning technique, as detailed in the subsequent sections.
