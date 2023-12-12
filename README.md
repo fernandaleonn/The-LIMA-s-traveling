@@ -47,7 +47,7 @@ Within this context, algorithms designed to yield optimal solutions have emerged
 
 **Proposed algorithm**
 
-To address this problem with the pruning method, we employ strategies aimed at narrowing down the search space and enhancing the algorithm's efficiency. Pruning is a widely-used technique in branching algorithms, where partial solutions that do not contribute to the optimal solution are discarded. Here, we present an overview of how this method can be effectively applied to the problem:
+To address this problem with the pruning method, pruning stands out as a crucial data compression technique employed in machine learning and search algorithms. Its primary objective is to diminish the size of decision trees by eliminating non-critical and redundant sections. This process significantly enhances the efficiency of the final classifier, leading to improved predictive accuracy. Here, we present an overview of how this method can be effectively applied to the problem:
 
 The TSP can be conceptualized as a search tree, wherein each node represents a city, and edges signify connections between cities. The primary objective is to discover a tour that visits each city exactly once, returning to the starting point, while minimizing the total distance covered.
 
