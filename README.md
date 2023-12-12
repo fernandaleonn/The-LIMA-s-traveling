@@ -1,7 +1,7 @@
 # THE TRAVELING SALESMAN PROBLEM
 **A CLASSIC CHALLENGE USING THE PRUNING METHOD**
 
-**Contents**
+## Contents
 
 1. [Abstract](#Abstract)
 2. [Introduction](#Introduction)
