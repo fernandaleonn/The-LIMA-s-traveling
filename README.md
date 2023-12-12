@@ -27,7 +27,7 @@ Furthermore, we will delve into the rationales underpinning the effectiveness of
 
 **Keywords:** Traveling Agent Problem, pruning method
 
-**Introduction**
+## Introduction
 
 What constitutes the optimal route for visiting all cities and returning to the city of departure? While acknowledging the existence of multiple routes to reach the same destination, selecting the most efficient one is crucial for directly minimizing travel costs, and consequently, it must also be the shortest. The Traveling Salesman's Problem (TSP) encapsulates the challenge of determining the shortest and most efficient route to reach a destination.
 
@@ -37,7 +37,7 @@ The inherent complexity arises from the exhaustive exploration of all possible p
 
 Throughout this document, we will delve into various techniques and approaches implemented in the Python language, utilizing tools such as Google Colab, to tackle this formidable challenge. This endeavor aspires to provide a robust and optimal solution for this classic optimization problem within the realm of Python programming.
 
-**Traveling salesman problem**
+## Traveling salesman problem
 
 It is one of the most renowned and intricate challenges in computer science, and various engineering disciplines have sought to address it. As outlined by De los Cobos et al. (2010), the Traveling Salesman Problem (TSP) is formally defined: given a positive integer  $n>0$ and the distances between each pair of n cities, expressed through the $n x n$ matrix $(d_{ij})$, where $d_{ij}$ is a non-negative integer. 
 
@@ -48,7 +48,7 @@ In the context of the TSP, a cyclic permutation $\pi$ serves as a representation
 If $\pi(j)$ is interpreted as the city following city j for j = 1, 2, ··· , n, the cost of the tour can be defined as follows:
 $\sum_{j=1}d_{j\pi (j)}$, for $j \leq n$ .
 
-**Solution methods**
+## Solution methods
 
 The traveling salesman problem entails a salesman and a set of cities. The task at hand is for the salesman to visit each city, commencing from a specific city (perhaps his hometown), and eventually returning to the same starting point. The primary challenge revolves around minimizing the overall duration of the journey.
 
@@ -56,7 +56,7 @@ Given the inherent complexity associated with solving the traveling salesman pro
 
 Within this context, algorithms designed to yield optimal solutions have emerged, such as the branch and join method and the pruning method. This work will primarily focus on the latter, a technique aimed at reducing the search space by systematically eliminating branches and nodes. In the realm of the Traveling Salesman Problem (TSP), pruning proves indispensable for enhancing the algorithm's efficiency by discarding solutions known in advance not to lead to the optimal solution.
 
-**Proposed algorithm**
+## Proposed algorithm
 
 To address this problem with the pruning method, pruning stands out as a crucial data compression technique employed in machine learning and search algorithms. Its primary objective is to diminish the size of decision trees by eliminating non-critical and redundant sections. This process significantly enhances the efficiency of the final classifier, leading to improved predictive accuracy. Here, we present an overview of how this method can be effectively applied to the problem:
 
@@ -87,20 +87,20 @@ M =
 In this scenario, our objective is to minimize the matrix M. It is straightforward to understand how distances are defined in this context. We can approach it row by row, considering the permutation $C = (0 \quad 1 \quad 2 \quad 3)$, where each number corresponds to a city, with 0 representing the origin city. For the given matrix, the cost of the route $C$ is 19. This calculation is derived from the fact that the journey from city 0 to city 1 incurs a cost of 3, and the journey from city 2 to city 3 incurs a cost of 6. Essentially, the row number represents the current city, and the column number represents the destination city. On the other hand, it is worth noting that in the trace of the matrix, we encounter 
 $\infty$. This is due to the fact that in Hamiltonian diagrams, the distance from a point to itself is defined as $\infty$.
 
-**Code Compilation Section**
+## Code Compilation Section
 
 url: https://colab.research.google.com/drive/12HSIfmL30q84P9Qqx1UihzjlF8KqapvR
 
 
 
-**References**
+## References
 
 1. Rosen, K. H. (1999). Discrete Mathematics Its Applications. Editorial.
 2. Dantzig, G. B., Fulkerson, D. R., & Johnson, S. M. (1954). Solution of a large-scale traveling-salesman problem. Operations Research, 2(4), 393-410.
 3. 
 
 
-**Authors**
+## Authors
 
 | [<img src="https://avatars.githubusercontent.com/u/141681072?v=4" width=115><br><sub>Eduardo Pérez Ponce</sub>](https://github.com/Edd-P-P) |  [<img src="https://avatars.githubusercontent.com/u/141791463?v=4" width=115><br><sub>Alejandro Sánchez Cisneros</sub>](https://github.com/alesac12) |  [<img src="https://avatars.githubusercontent.com/u/141685549?v=4" width=115><br><sub>Maria Fernanda Garcia León</sub>](https://github.com/fernandaleonn) |  [<img src="https://avatars.githubusercontent.com/u/141802122?v=4" width=115><br><sub>Eduardo Alanís Garcia</sub>](https://github.com/Eduardo-Alanis-Garcia)
 | :---: | :---: | :---: | :---: |
