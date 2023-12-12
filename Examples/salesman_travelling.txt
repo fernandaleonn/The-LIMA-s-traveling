@@ -1,5 +1,5 @@
 this function solve the salesman travelling problem employing the functions cost and the function city_permutation
-using a symetrical matrix of distance and the total fo cities
+using a symmetric matrix of distance and the total of cities
 
 for example:
 
