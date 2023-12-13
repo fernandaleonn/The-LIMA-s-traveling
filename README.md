@@ -1,6 +1,8 @@
 # THE TRAVELING SALESMAN PROBLEM
 **A CLASSIC CHALLENGE USING THE PRUNING METHOD**
 
+[![Whats-App-Image-2023-12-12-at-11-43-58-PM.jpg](https://i.postimg.cc/J4JGVHMb/Whats-App-Image-2023-12-12-at-11-43-58-PM.jpg)](https://postimg.cc/fJzwYL3L)
+
 ## Contents
 
 1. [Abstract](#Abstract)
