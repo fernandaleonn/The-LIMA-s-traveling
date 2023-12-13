@@ -5,6 +5,3 @@ example:
 graph_generator({0, 1, 2, 3, 4, 5, 0})
 
 It will print the graph "{0, 1, 2, 3, 4, 5, 0}" where you will observe how 0 is connected to 1, then 1 to 2, and so on, until 5 is connected to 0.
-
-
-
