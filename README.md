@@ -97,7 +97,7 @@ url: https://colab.research.google.com/drive/12HSIfmL30q84P9Qqx1UihzjlF8KqapvR
 
 1. Rosen, K. H. (1999). Discrete Mathematics Its Applications. Editorial.
 2. Dantzig, G. B., Fulkerson, D. R., & Johnson, S. M. (1954). Solution of a large-scale traveling-salesman problem. Operations Research, 2(4), 393-410.
-3. 
+ 
 
 
 ## Authors
